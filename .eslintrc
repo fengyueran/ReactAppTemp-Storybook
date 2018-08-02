@@ -10,6 +10,9 @@
     "react/forbid-prop-types": "off",
     "no-console": "off",
     "eol-last": "off",
+    "no-unused-vars": "warn",
+    "no-trailing-spaces": "off",
+    "prefer-destructuring": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-one-expression-per-line": "off",
     "react/prefer-stateless-function": "off"

@@ -164,6 +164,8 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                  modules: true,
+                  localIdentName: '[name]__[local]___[hash:base64:5]'
                 },
               },
               {
@@ -173,6 +175,7 @@ module.exports = {
                   // https://github.com/facebookincubator/create-react-app/issues/2677
                   ident: 'postcss',
                   plugins: () => [
+                    require('postcss-nested'),
                     require('postcss-flexbugs-fixes'),
                     autoprefixer({
                       browsers: [
